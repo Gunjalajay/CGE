@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Componant Guide For Electronics</string>
+    <string-array name="Capacitor_names">
+        <item>Electrolyte Capacitor</item>
+        <item>Mica Capacitor</item>
+        <item>Ceramic Capacitor </item>
+        <item>Film Capacitor</item>
+    </string-array>
+
+    <string-array name="Diode_names">
+        <item>P-N Junction Diode</item>
+        <item>Light Emitting Diode</item>
+        <item>Laser Diode</item>
+        <item>Zener Diode</item>
+
+    </string-array>
+
+    <string-array name="Resistor_names">
+        <item>Fixed Resistor</item>
+        <item>Variable Resistor / Rheostat</item>
+        <item>Light Dependent Resistor</item>
+        <item>Thermistor</item>
+
+    </string-array>
+
+    <string-array name="IC_names">
+        <item>IC</item>
+        <item>Thin And Thick IC</item>
+        <item>Monolithic IC</item>
+        <item>Hybrid Or Multichip IC</item>
+    </string-array>
+
+</resources>
