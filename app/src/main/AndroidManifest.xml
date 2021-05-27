@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject">
-        <activity android:name=".Web3"></activity>
+        <activity android:name=".mail"></activity>
+        <activity android:name=".Web3" />
         <activity android:name=".IC" />
         <activity android:name=".Web2" />
         <activity android:name=".Resistor" />

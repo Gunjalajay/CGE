@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#afa">
+    >
 
 
     <TextView
@@ -19,7 +19,7 @@
         android:padding="10dp"
         android:textSize="25sp"
         android:gravity="center"
-        android:background="#afafaf"
+        android:background="@drawable/curve_button"
         />
 
 

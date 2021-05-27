@@ -6,6 +6,7 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private CardView capacitor;
     private CardView diode;
     private CardView ic;
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +58,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v3) {
                 Toast.makeText(MainActivity.this, "IC's opening...", Toast.LENGTH_SHORT).show();
                 Intent intent=new Intent(MainActivity.this,IC.class);
+                startActivity(intent);
+            }
+        });
+        button=(Button)findViewById(R.id.contact);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v3) {
+                Intent intent=new Intent(MainActivity.this,mail.class);
                 startActivity(intent);
             }
         });

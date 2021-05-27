@@ -18,7 +18,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -31,14 +30,15 @@
         android:textColor="@color/white"
         android:textSize="28sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
 
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
-        android:layout_height="128dp"
+        android:layout_height="100dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
@@ -58,7 +58,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="76dp"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="28dp"
                 android:gravity="center"
                 android:text="Componants"
                 android:textAllCaps="true"
@@ -87,9 +87,9 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/resistor"
             android:layout_width="170dp"
-            android:layout_height="210dp"
-            android:layout_margin="8dp"
-            android:layout_marginEnd="16dp"
+            android:layout_height="200dp"
+            android:layout_margin="4dp"
+            android:layout_marginEnd="10dp"
             android:clickable="true"
             android:elevation="12dp"
             android:focusable="true"
@@ -134,9 +134,9 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/capacitor"
             android:layout_width="170dp"
-            android:layout_height="210dp"
-            android:layout_margin="8dp"
-            android:layout_marginStart="16dp"
+            android:layout_height="200dp"
+            android:layout_margin="4dp"
+            android:layout_marginEnd="10dp"
             android:clickable="true"
             android:elevation="12dp"
             android:focusable="true"
@@ -194,9 +194,9 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/diode"
             android:layout_width="170dp"
-            android:layout_height="210dp"
-            android:layout_margin="8dp"
-            android:layout_marginEnd="16dp"
+            android:layout_height="200dp"
+            android:layout_margin="4dp"
+            android:layout_marginEnd="10dp"
             android:clickable="true"
             android:elevation="12dp"
             android:focusable="true"
@@ -241,9 +241,9 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/ic"
             android:layout_width="170dp"
-            android:layout_height="210dp"
-            android:layout_margin="8dp"
-            android:layout_marginStart="16dp"
+            android:layout_height="200dp"
+            android:layout_margin="4dp"
+            android:layout_marginEnd="10dp"
             android:clickable="true"
             android:elevation="12dp"
             android:focusable="true"
@@ -287,5 +287,18 @@
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/contact"
+        android:layout_width="173dp"
+        android:layout_height="75dp"
+        android:background="@drawable/curve_button"
+        android:text="Contact us"
+        android:textSize="20dp"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.263" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
