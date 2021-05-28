@@ -60,7 +60,7 @@
                 android:layout_marginStart="76dp"
                 android:layout_marginTop="28dp"
                 android:gravity="center"
-                android:text="Componants"
+                android:text="Components"
                 android:textAllCaps="true"
                 android:textColor="@color/green_500"
                 android:textSize="30dp"

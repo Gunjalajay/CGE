@@ -5,10 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".IC">
+    <SearchView
+        android:id="@+id/searchView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:queryHint="Search.."
+        >
+
+    </SearchView>
+
     <ListView
         android:id="@+id/list_c"
+        android:layout_alignParentLeft="true"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"/>
 
 
 </RelativeLayout>

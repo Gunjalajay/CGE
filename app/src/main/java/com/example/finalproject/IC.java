@@ -8,10 +8,12 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.SearchView;
 
 public class IC extends AppCompatActivity {
 
     ListView l;
+    SearchView s;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -19,6 +21,7 @@ public class IC extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_i_c);
         l = findViewById(R.id.list_c);
+        s=findViewById(R.id.searchView4);
 
 
         String[] ics_;
@@ -36,5 +39,24 @@ public class IC extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        s.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+
+            @Override
+            public boolean onQueryTextSubmit(String text) {
+                // TODO Auto-generated method stub
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String text) {
+
+                arr.getFilter().filter(text);
+
+                return false;
+            }
+        });
     }
+
+
+
 }
